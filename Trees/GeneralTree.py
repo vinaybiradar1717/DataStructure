@@ -1,14 +1,14 @@
-# -> Music
-#   -> Shaan
-#     -> Bum Bum Bole
-#     -> Chand Shifarish
-#   -> Vijay
-#     -> Hands Up
-#     -> Gatiya Ilidu
-#     -> Belageddu
-#   -> Arijit
-#     -> Tum Hi Ho
-#     -> Janam Janam
+# |_ Music
+#   |_ Shaan
+#     |_ Bum Bum Bole
+#     |_ Chand Shifarish
+#   |_ Vijay
+#     |_ Hands Up
+#     |_ Gatiya Ilidu
+#     |_ Belageddu
+#   |_ Arijit
+#     |_ Tum Hi Ho
+#     |_ Janam Janam
 
 
 class Treenode:
