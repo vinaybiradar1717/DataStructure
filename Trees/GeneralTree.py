@@ -31,7 +31,7 @@ class Treenode:
 
     def PrintChildren(self):
         spaces = " " * self.GetLevel()*2
-        prefix = spaces + "->"
+        prefix = spaces + "|_"
         print(f"{prefix} {self.data}")
         if self.children:
             for child in self.children:
