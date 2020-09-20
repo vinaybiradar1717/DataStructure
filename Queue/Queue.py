@@ -1,3 +1,8 @@
+#  ENQUEUE
+#  QEQUEUE
+#  IS_EMPTY
+#  SIZE
+
 from collections import deque
 
 class Queue:

@@ -1,3 +1,9 @@
+#  PUSH
+#  POP
+#  IS_EMPTY
+#  PEEK
+#  SIZE
+
 from collections import deque
 
 class Stack:
@@ -16,6 +22,9 @@ class Stack:
     def peek(self):
         return self.container[-1]
 
+    def size(self):
+        return len(self.container)
+
 if __name__ == "__main__":
     s = Stack()
     s.push(10)
@@ -24,5 +33,6 @@ if __name__ == "__main__":
     print(s.pop())
     print(s.peek())
     print(s.is_empty())
+    print(s.size())
 
     
