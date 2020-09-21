@@ -1,3 +1,10 @@
+#  ADD CHILD
+#  PREORDER TRAVERSAL
+#  POSTORDER TRAVERSAL
+#  MIN ELEMENT
+#  MAX ELEMENT
+#  BUILD TREE (OUTSIDE CLASS)
+
 class BinarySearchTree:
     def __init__(self, data=None):
         self.data = data
@@ -28,6 +35,26 @@ class BinarySearchTree:
             ele += self.right.PreOrder()
         return ele
 
+    def PostOrder(self):
+        ele = []
+        if self.left:
+            ele += self.left.PostOrder()
+        if self.right:
+            ele += self.right.PostOrder()
+        ele.append(self.data)
+        return ele
+
+    def FindMin(self):
+        if self.left is None:
+            return self.data
+        return self.left.FindMin()
+
+    def FindMax(self):
+        if self.right is None:
+            return self.data
+        return self.right.FindMax()
+        
+
 def BuildTree(nums):
     root = BinarySearchTree(nums[0])
     for i in range(1, len(nums)):
@@ -39,3 +66,7 @@ if __name__ == "__main__":
     tree = BuildTree(nums)
     a = tree.PreOrder()
     print(a)
+    b = tree.PostOrder()
+    print(b)
+    print(f"Min element is: {tree.FindMin()}")
+    print(f"Max element is: {tree.FindMax()}")
